@@ -1,7 +1,10 @@
-**Fivem Script Converter**
+# **Fivem Script Converter**
 
+## How it works 
 
-*Usage*
+This libary can convert FiveM ESX scripts to Qbus and Qbus to ESX
+
+### Usage*
 
 ```js
 const converter = require('fivem-script-converter');
