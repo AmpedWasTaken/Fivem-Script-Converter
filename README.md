@@ -7,20 +7,17 @@
 const converter = require('fivem-script-converter');
 
 // to convert a qbus script to esx
-converter.qbustoesx();
+converter.qbustoesx('path/to/qbus/script.lua');
 // ===============================
 
 
 // to convert a esx script to qbus
-converter.esxtoqbus();
+converter.esxtoqbus('path/to/esx/script.lua');
 // ===============================
 ```
 
-```js
-const converter = require('fivem-script-converter');
-
-
-```
+## Fivem Script Converter CLI
+[Github](https://github.com/zQytPpQsBU)
 
 <!-- ***Discord***
 
