@@ -17,12 +17,10 @@ converter.esxtoqbus('path/to/esx/script.lua');
 ```
 
 ## Fivem Script Converter CLI
-[Github](https://github.com/zQytPpQsBU)
+<a href="https://github.com/AmpedScripts/Fivem-Script-Converter-CLI" target="blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
 
-<!-- ***Discord***
+# Discord
+<a href="https://discord.com/users/670792646494650408" target="blank"><img src="https://img.shields.io/badge/Discord-100000?style=for-the-badge&logo=discord&logoColor=white"/>
 
-[Discord Server / Support Server](https://discord.gg/zQytPpQsBU)
-
-***Buy me a coffee***
-
-[Buy me a coffee](https://www.paypal.com/paypalme/Zennnontop) -->
+# Npm Page
+<a href="https://www.npmjs.com/package/fivem-script-converter" target="blank"><img src="https://img.shields.io/badge/Npm-100000?style=for-the-badge&logo=npm&logoColor=white"/>
