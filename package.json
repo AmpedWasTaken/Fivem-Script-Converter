@@ -1,0 +1,24 @@
+{
+  "name": "fivem-script-converter",
+  "version": "1.0.7",
+  "description": "a fivem script converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Fivem",
+    "ESX",
+    "Qbus"
+  ],
+  "author": "Amped#5557",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "finalhandler": "^1.1.2",
+    "fs": "0.0.1-security",
+    "node-fetch": "^3.2.0",
+    "requestify": "^0.2.5",
+    "router": "^1.3.6"
+  }
+}
