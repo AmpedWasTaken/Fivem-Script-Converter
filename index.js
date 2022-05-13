@@ -3,7 +3,6 @@ const colors = require('colors');
 var requestify = require('requestify');
 var pjson = require('./package.json');
 
-
 console.log("   __  ___        __       ___          ___                     __      ".brightCyan)
 console.log("  /  |/  /__ ____/ /__    / _ )__ __   / _ | __ _  ___  ___ ___/ /      ".brightCyan)
 console.log(" / /|_/ / _ `/ _  / -_)  / _  / // /  / __ |/  ' \\/ _ \\/ -_) _  /     ".brightCyan)
@@ -24,8 +23,8 @@ requestify.get('https://ampedscripts.nl/version.txt')
 });
      
 
-var esxtoqbus = function esxtoqbus(){
-     var code = fs.readFileSync('input.lua','utf8')
+var esxtoqbus = function esxtoqbus(file){
+     var code = fs.readFileSync(file,'utf8')
 
      code = code.replaceAll(`TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)`, `TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)`);
      code = code.replaceAll(`while ESX == nil do`, `while QBCore == nil do`);
@@ -105,11 +104,11 @@ var esxtoqbus = function esxtoqbus(){
          if (err) return console.log(err);
      });
 
-     console.log('Succesfully converted the input.lua from ESX to Qbus!')
+     console.log(`Succesfully converted the ${file} from ESX to Qbus!`)
 };
 
-var qbustoesx = function qbustoesx(){
-     var code = fs.readFileSync('input.lua','utf8')
+var qbustoesx = function qbustoesx(file){
+     var code = fs.readFileSync(file,'utf8')
      code = code.replaceAll(`TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)`, `TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)`);
      code = code.replaceAll(`QBCore = exports['qb-core']:GetCoreObject()`, `TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)`);
      code = code.replaceAll(`local QBCore = exports['qb-core']:GetCoreObject()`,`ESX = nil\nTriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)`);
@@ -197,7 +196,7 @@ var qbustoesx = function qbustoesx(){
          if (err) return console.log(err);
      });
 
-     console.log('Succesfully converted the input.lua from Qbus to ESX!')
+     console.log(`Succesfully converted the ${file} from Qbus to ESX!`)
 };
 
 module.exports.qbustoesx = qbustoesx;
