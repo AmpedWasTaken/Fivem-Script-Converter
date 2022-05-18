@@ -1,6 +1,6 @@
 {
   "name": "fivem-script-converter",
-  "version": "1.0.7",
+  "version": "1.1.2",
   "description": "a fivem script converter",
   "main": "index.js",
   "scripts": {
