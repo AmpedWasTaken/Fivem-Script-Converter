@@ -19,6 +19,9 @@
 
 ---
 
+# THIS IS A LIBRARY THIS WILL ONLY WORK IN JS USE THE CLI FOR NORMAL USE
+
+---
 ## How it works 
 
 This libary can convert FiveM ESX scripts to Qbus and Qbus to ESX
